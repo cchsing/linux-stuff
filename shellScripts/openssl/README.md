@@ -10,4 +10,4 @@ To automate different use cases for the TLS related security stuff.
    - got issue with the way chain certificates are validated. It seems like the validation is not based the information contained in the section "Issuer:" and "Subject:"
    - further investigation seems to suggest the "X509v3 extensions:" play the roles for the validation
      - more specifically "X509v3 Authority Key Identifier:"
-   - the validation seems to be related to the openssl configuration, openssl.cnf located in /etc/pki/tls
+     - the information is related to the openssl configuration, openssl.cnf located in /etc/pki/tls
