@@ -6,7 +6,7 @@ Linux scripts and configuration files that had been done and worth keeping for f
 3. nohup sar -o ./file
 4. explaination for "> /dev/null 2>&1"
 
->> /dev/null redirects standard output (stdout) to /dev/null, which discards it.
+\>\> /dev/null redirects standard output (stdout) to /dev/null, which discards it.
 
 (The >> seems sort of superfluous, since >> means append while > means truncate and write, and either appending to or writing to /dev/null has the same net effect. I usually just use > for that reason.)
 
