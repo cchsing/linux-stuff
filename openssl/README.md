@@ -28,6 +28,10 @@
 
 `openssl req -key domain.key -passin pass:passphrase -new -out domain.csr`
 
+`openssl req -config myserver.cnf -keyout myserver.key -new -out myserver.csr` - generate key at the same time
+
+`openssl req -key myserver.key -new -out myserver.csr -config myserver.cnf`
+
 ## **Review the CSR**
 
 `openssl req -text -noout -verify -in CSR.csr`
@@ -44,17 +48,18 @@
 [ req ]
 default_bits = 2048
 prompt = no
+encrypt_key = no
 default_md = sha256
 req_extensions = req_ext
 distinguished_name = dn
 
 [ dn ]
-C = US
-ST = California
-L = San Fransisco
-O = MLopsHub
-OU = MlopsHub Dev
-CN = demo.mlopshub.com
+C = MY
+ST = WP
+L = KL
+O = CIMB
+OU = Tools & Automation
+CN = 10.111.32.159
 
 [ req_ext ]
 subjectAltName = @alt_names
