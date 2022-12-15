@@ -30,7 +30,7 @@
 
 `openssl req -config myserver.cnf -keyout myserver.key -new -out myserver.csr` - generate key at the same time
 
-`openssl req -key myserver.key -new -out myserver.csr -config myserver.cnf`
+`openssl req -key myserver.key -new -out myserver.csr -config myserver.cnf` 
 
 ## **Review the CSR**
 
