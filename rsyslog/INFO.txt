@@ -1,3 +1,0 @@
-Records - 5 September 2022
-- added 20-vmware.conf
-- Configuration for syslog receiving messages and organized according to hostname and program name

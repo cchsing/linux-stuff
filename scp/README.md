@@ -1,1 +1,0 @@
-scp file.txt remote_username@10.10.10.10:/remote/directory/newfilename.txt
